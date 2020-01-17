@@ -1,5 +1,5 @@
 # _Programming Language Suggester webpage_
-[See my suggestion at:](https://jieunkang-101.github.io/portfolio)
+[See my suggestion at:](https://jieunkang-101.github.io/programming-language-suggester-webpage)
 
 #### _Independent Project in HTML, CSS, Bootstrap and Git for Epicodus, 1/17/20_
 
@@ -7,7 +7,7 @@
 
 ## Description
 
-_This web page is portfolio landing page that includes images, several information about me. The web page is styled with a custom stylesheet._
+_This webpage asks future computer programming language learner a series of questions about themselves and provides a language suggestion based on their answers. It includes jQuery Effects, custom css an Bootstrap modal to provide informaiton to users._
 
 ## Setup/Installation Requirements
 
