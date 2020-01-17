@@ -1,4 +1,11 @@
+#name {
+  padding-right: 20px;
+}
+
 .form-group {
+  margin-top: 40px;
+}
+.btn {
   margin-top: 40px;
 }
 
@@ -6,7 +13,13 @@
   margin-top: 50px;
 }
 
-.name {
+.first-name {
   color: rgb(42, 62, 104);
   font-size: larger;
 }
+
+.last-name {
+  color: rgb(42, 62, 104);
+  font-size: larger;
+}
+

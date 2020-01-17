@@ -1,9 +1,11 @@
 $(document).ready(function() {
   $("#survey").submit(function(event) {
     event.preventDefault();
-    var nameInput = $("input#name").val();
+    var firstNameInput = $("input#first-name").val();
+    var lastNameInput = $("input#last-name").val();
 
-    $(".name").text(nameInput);
+    $(".first-name").text(firstNameInput);
+    $(".last-name").text(lastNameInput);
 
   });
 });
