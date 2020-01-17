@@ -1,11 +1,13 @@
 $(document).ready(function() {
   $("#survey").submit(function(event) {
     event.preventDefault();
-    var firstNameInput = $("input#first-name").val();
-    var lastNameInput = $("input#last-name").val();
+    var firstNameInput = $("input#firstName").val();
+    var lastNameInput = $("input#lastName").val();
 
-    $(".first-name").text(firstNameInput);
-    $(".last-name").text(lastNameInput);
+    $(".firstName").text(firstNameInput);
+    $(".lastName").text(lastNameInput);
+
+   $(".panel").show(); 
 
   });
 });

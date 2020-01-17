@@ -1,3 +1,21 @@
+.container {
+  margin-bottom: 150px;
+  margin-left: 150px;
+  font-family: sans-serif;
+  font-size: 120%;
+}
+
+.jumbotron {
+  margin-top: 50px;
+  padding: 30px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#title {
+  font-weight: bold;
+}
+
 #name {
   padding-right: 20px;
 }
@@ -19,12 +37,12 @@
   margin-top: 50px;
 }
 
-.first-name {
+.firstName {
   color: rgb(42, 62, 104);
   font-size: larger;
 }
 
-.last-name {
+.lastName {
   color: rgb(42, 62, 104);
   font-size: larger;
 }

@@ -9,18 +9,23 @@
     </head>
     <body>
       <div class="container">
-        <h1>Programming Language Suggester</h1>
+        <div class="jumbotron jumbotron-fluid">
+          <h2 id="title">Programming Language Suggester</h2>
+        </div>
+        <div class="description">
+        <p>The programming and developer communities are emerging at a rate faster than ever before. Various new programming languages are coming up that are suited for different categories of developers (beginners, intermediate, and experts) as well as for different use cases (web application, mobile applications, game development, distributed system, etc). Every beginner is puzzled with the question, "What programming language should I learn?" <em>This programming languages suggester</em> will give you a recommendation which languages you should learn. Enter your information and opinion followed questions.</p>
+        </div>
         <form id="survey">
           <div class="form-group">
             <label for="name">* What is your name?</label>
             <br>
             <span id="name">
-              <label for="first-name">First</label>
-              <input id="first-name" type="text" class="form-control:focus" placeholder="Jieun">
+              <label for="firstName">First</label>
+              <input id="firstName" type="text" class="form-control:focus" placeholder="Jieun">
             </span>
             <span>
-              <label for="last-name">Last</label>
-              <input id="last-name" type="text" class="form-control:focus" placeholder="Kang">
+              <label for="lastName">Last</label>
+              <input id="lastName" type="text" class="form-control:focus" placeholder="Kang">
             </span>
           </div>
           <div class="form-group">
@@ -29,65 +34,74 @@
               <label>
                 <input type="checkbox" value="language1">Python
               </label>
-              <br>
+            </div>
+            <div class="checkbox">
               <label>
                 <input type="checkbox" value="language2">Java
               </label>
-              <br>
+            </div>
+            <div class="checkbox">
               <label>
                 <input type="checkbox" value="language3">JavaScript
               </label>
-              <br>
+            </div>
+            <div class="checkbox">
               <label>
                 <input type="checkbox" value="language4">PHP
               </label>
-              <br>
+            </div>
+            <div class="checkbox">
               <label>
                 <input type="checkbox" value="language5">C#
               </label>
-              <br>
+            </div>
+            <div class="checkbox">
               <label>
                 <input type="checkbox" value="language6">Ruby
               </label>
-            </div><!-- /.form.checkbox -->
+            </div>
           </div>
           <div class="form-group">
             <label for="workplace">Q2. What type of work environment do you prefer?</label>
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" value="workplace1" checked>
+                <input type="radio" name="groupWorkplace" value="workplace1" checked>
                 A collaborative community
               </label>
-              <br>
+            </div>
+            <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" value="workplace2">
+                <input type="radio" name="groupWorkplace" value="workplace2">
                 A competitive environment
               </label>
-              <br>
+            </div>
+            <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" value="workplace3">
+                <input type="radio" name="groupWorkplace" value="workplace3">
                 A cause-focused organization
               </label>
-            </div><!-- /.form.radio -->
+            </div>
           </div>
           <div class="form-group">
             <label for="company">Q3. What type of company would you like to work for?</label>
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" value="company1" checked>
+                <input type="radio" name="groupCompany" value="company1" checked>
                 Larger enterprises
               </label>
-              <br>
+            </div>
+            <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" value="company2">
+                <input type="radio" name="groupCompany" value="company2">
                 Startup companies
               </label>
-              <br>
+            </div>
+            <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" value="company3">
+                <input type="radio" name="groupCompany" value="company3">
                 Government agencies 
               </label>
-            </div><!-- /.form.radio -->
+            </div>
           </div>
           <div class="form-group">
             <label for="target">Q4. Which type of developer are you more interested in?</label>
@@ -104,12 +118,13 @@
                 <input type="radio" name="optionsRadios" value="yes" checked>
                 Yes
               </label>
-              <br>
+            </div>            
+            <div class="radio">
               <label>
                 <input type="radio" name="optionsRadios" value="no" checked>
                 No
               </label>
-            </div><!-- /.form.radio -->
+            </div>
           </div>
           <button type="submit" class="btn btn-warning">Submit</button>
         </form>
@@ -126,7 +141,7 @@
 
         <div class="panel panel-danger">
           <div class="panel-heading">
-            <h3 class="panel-title">Programming Language Suggestion for <em><span class="first-name"></span></em> <em><strong><span class="last-name"></span></strong></em></h3>
+            <h3 class="panel-title">Programming Language Suggestion for <em><span class="firstName"></span></em> <em><strong><span class="lastName"></span></strong></em></h3>
           </div>
           <div class="panel-body">
             <div id="output">
