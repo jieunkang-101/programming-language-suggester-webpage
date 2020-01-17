@@ -8,8 +8,15 @@
 .jumbotron {
   margin-top: 50px;
   padding: 30px;
+  padding-bottom: 40px;
   font-family: sans-serif;
   text-align: center;
+  background-color: rgb(245, 228, 228);
+}
+
+.description {
+  border: 2px solid rgb(247, 214, 214);
+  padding: 10px;
 }
 
 #title {
@@ -32,9 +39,15 @@
   margin-top: 40px;
 }
 
-.panel {
+/* .panel {
   display: none;
   margin-top: 50px;
+  padding: 100px;
+} */
+
+.panel-title {
+  font-size: 120%;
+  font-weight: bold;
 }
 
 .firstName {
@@ -47,5 +60,11 @@
   font-size: larger;
 }
 
+img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-right: 30px;
+}
 
 
