@@ -55,42 +55,61 @@
             <label for="workplace">Q2. What type of work environment do you prefer?</label>
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" value="option1" checked>
+                <input type="radio" name="optionsRadios" value="workplace1" checked>
                 A collaborative community
               </label>
               <br>
               <label>
-                <input type="radio" name="optionsRadios" value="option2">
+                <input type="radio" name="optionsRadios" value="workplace2">
                 A competitive environment
               </label>
               <br>
               <label>
-                <input type="radio" name="optionsRadios" value="option3">
+                <input type="radio" name="optionsRadios" value="workplace3">
                 A cause-focused organization
               </label>
             </div><!-- /.form.radio -->
           </div>
           <div class="form-group">
-            <label for="target">Q3. What type of company would you like to work for?</label>
+            <label for="company">Q3. What type of company would you like to work for?</label>
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" value="option1" checked>
+                <input type="radio" name="optionsRadios" value="company1" checked>
                 Larger enterprises
               </label>
               <br>
               <label>
-                <input type="radio" name="optionsRadios" value="option2">
+                <input type="radio" name="optionsRadios" value="company2">
                 Startup companies
               </label>
               <br>
               <label>
-                <input type="radio" name="optionsRadios" value="option3">
+                <input type="radio" name="optionsRadios" value="company3">
                 Government agencies 
               </label>
             </div><!-- /.form.radio -->
           </div>
           <div class="form-group">
-
+            <label for="target">Q4. Which type of developer are you more interested in?</label>
+            <select class="form-control" id="target">
+              <option id="frontend" value="frontend">Front-end Developer (User Interface)</option>
+              <option id="backend" value="backend">Back-end Developer (business Logic)</option>
+              <option id="fullstack" value="fullstack">Full-stack Developer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="choice">Q5. Do you enjoy being persistent and hunting down the problem?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" value="yes" checked>
+                Yes
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="optionsRadios" value="no" checked>
+                No
+              </label>
+            </div><!-- /.form.radio -->
           </div>
           <button type="submit" class="btn btn-warning">Submit</button>
         </form>

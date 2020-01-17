@@ -5,11 +5,17 @@
 .form-group {
   margin-top: 40px;
 }
+
+#target {
+  width: 40%;
+}
+
 .btn {
   margin-top: 40px;
 }
 
 .panel {
+  display: none;
   margin-top: 50px;
 }
 
@@ -22,4 +28,6 @@
   color: rgb(42, 62, 104);
   font-size: larger;
 }
+
+
 
