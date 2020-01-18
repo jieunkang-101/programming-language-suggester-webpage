@@ -8,15 +8,30 @@ $(document).ready(function() {
     var choice = $("input:radio[name=groupChoice]:checked").val();
 
     if (choice === "no") {
-      $(".modalFade").show();
+      $(".modalFade").fadeIn();
+      $("#modalClose").click(function() {
+        $("#myModal").fadeOut();
+      });
     } else if (position === "frontEnd" || position === "fullStack") {
       $("#outputJs").show();
+      $(".close").click(function() {
+        $("#outputJs").hide();
+      });
     } else if (position === "backEnd" && company ==="company1") {
-      $("#outputPython").show();
+      $("#outputPython").slideDown();
+      $(".close").click(function() {
+        $("#outputPython").slideUp();
+      });
     } else if (position === "backEnd" && company ==="company3") {
       $("#outputCsharp").show();
+      $(".close").click(function() {
+        $("#outputCsharp").hide();
+      });
     } else {
       $("#outputJs").show(); 
+      $(".close").click(function() {
+        $("#outputJs").hide();
+      });
     }
 
     $(".firstName").text(firstNameInput);
