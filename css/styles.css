@@ -39,7 +39,19 @@
   margin-top: 60px;
 }
 
-.panel {
+#outputCsharp {
+  display: none;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+#outputJs {
+  display: none;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+#outputPython {
   display: none;
   margin-top: 50px;
   padding: 50px;
