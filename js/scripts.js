@@ -8,29 +8,48 @@ $(document).ready(function() {
     var choice = $("input:radio[name=groupChoice]:checked").val();
 
     if (choice === "no") {
-      $(".modalFade").fadeIn();
+      $("#outputJs").hide();
+      $("#outputPython").hide();
+      $("#outputCsharp").hide();
+      $(".modalFade").show();
       $("#modalClose").click(function() {
-        $("#myModal").fadeOut();
+        $("#myModal").hide();
       });
     } else if (position === "frontEnd" || position === "fullStack") {
-      $("#outputJs").show();
+      $("#outputJs").hide();
+      $("#outputPython").hide();
+      $("#outputCsharp").hide();
+      $("#myModal").hide();
+      $("#outputJs").slideDown();
       $(".close").click(function() {
-        $("#outputJs").hide();
+        $("#outputJs").slideUp();
       });
     } else if (position === "backEnd" && company ==="company1") {
-      $("#outputPython").slideDown();
+      $("#outputJs").hide();
+      $("#outputPython").hide();
+      $("#outputCsharp").hide();
+      $("#myModal").hide();
+      $("#outputPython").fadeIn();
       $(".close").click(function() {
-        $("#outputPython").slideUp();
+        $("#outputPython").fadeOut();
       });
     } else if (position === "backEnd" && company ==="company3") {
-      $("#outputCsharp").show();
+      $("#outputJs").hide();
+      $("#outputPython").hide();
+      $("#outputCsharp").hide();
+      $("#myModal").hide();
+      $("#outputCsharp").fadeIn();
       $(".close").click(function() {
-        $("#outputCsharp").hide();
+        $("#outputCsharp").fadeOut();
       });
     } else {
-      $("#outputJs").show(); 
+      $("#outputJs").hide();
+      $("#outputPython").hide();
+      $("#outputCsharp").hide();
+      $("#myModal").hide();
+      $("#outputPython").fadeIn();
       $(".close").click(function() {
-        $("#outputJs").hide();
+        $("#outputPython").fadeOut();
       });
     }
 
