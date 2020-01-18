@@ -1,5 +1,5 @@
 # _Programming Language Suggester webpage_
-[See my suggestion at:](https://jieunkang-101.github.io/programming-language-suggester-webpage)
+See my suggestion at:[https://jieunkang-101.github.io/programming-language-suggester-webpage]
 
 #### _Independent Project in JavaSsript and jQuery for Epicodus, 1/17/20_
 
