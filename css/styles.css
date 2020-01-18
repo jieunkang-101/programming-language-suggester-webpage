@@ -79,4 +79,6 @@ img {
   margin-right: 30px;
 }
 
-
+#myModal {
+  display: none;
+}

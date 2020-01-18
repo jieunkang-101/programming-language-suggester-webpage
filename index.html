@@ -86,19 +86,19 @@
             <label for="company">Q3. What type of company would you like to work for?</label>
             <div class="radio">
               <label>
-                <input type="radio" name="groupCompany" value="company1">
+                <input type="radio" name="groupCompany" value="company1" required>
                 Larger enterprises
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="groupCompany" value="company2">
+                <input type="radio" name="groupCompany" value="company2" required>
                 Startup companies
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="groupCompany" value="company3">
+                <input type="radio" name="groupCompany" value="company3" required>
                 Government agencies 
               </label>
             </div>
@@ -139,7 +139,7 @@
               </label>
             </div>
           </div>
-          <button type="submit" class="btn btn-warning">Submit</button>
+          <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Submit</button>
         </form>
         <div id="outputCsharp">
           <div class="panel panel-danger">
@@ -225,6 +225,28 @@
             </div>
           </div>
         </div>
+
+
+        <div class="modalFade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div> 
+          </div>
+        </div> 
+
+
+
+
       </div>
     </body>
   </html>
