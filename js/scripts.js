@@ -34,9 +34,7 @@ $(document).ready(function() {
       });
     }
 
-    $(".firstName").text(firstNameInput);
-    $(".lastName").text(lastNameInput);
-
-    
+    $(".firstName").text(firstNameInput.substring(0, 1).toUpperCase() + firstNameInput.substring(1));
+    $(".lastName").text(lastNameInput.substring(0, 1).toUpperCase() + lastNameInput.substring(1));
   });
 });
