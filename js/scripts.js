@@ -7,10 +7,14 @@ $(document).ready(function() {
     var position = $("input:radio[name=groupPosition]:checked").val();
     var choice = $("input:radio[name=groupChoice]:checked").val();
 
-    if (position === "frontEnd") {
-      $("#outputCsharp").show(); 
-
-      // $("#outputCsharp").show();
+    if (position === "frontEnd" || position === "fullStack") {
+      $("#outputJs").toggle(); 
+    } else if (position === "backEnd" && company ==="company1") {
+      $("#outputPython").toggle();
+    } else if (position === "backEnd" && company ==="company3") {
+      $("#outputCsharp").toggle();
+    } else {
+      $("#outputJs").toggle(); 
     }
 
     $(".firstName").text(firstNameInput);
