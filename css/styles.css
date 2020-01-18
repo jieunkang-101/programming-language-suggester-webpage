@@ -1,12 +1,12 @@
 .container {
-  margin-bottom: 150px;
+  margin-bottom: 200px;
   margin-left: 150px;
   font-family: sans-serif;
   font-size: 120%;
 }
 
 .jumbotron {
-  margin-top: 50px;
+  margin-top: 70px;
   padding: 30px;
   padding-bottom: 40px;
   font-family: sans-serif;
@@ -28,7 +28,7 @@
 }
 
 .form-group {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 #target {
@@ -36,14 +36,14 @@
 }
 
 .btn {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
-/* .panel {
+.panel {
   display: none;
   margin-top: 50px;
-  padding: 100px;
-} */
+  padding: 50px;
+}
 
 .panel-title {
   font-size: 120%;

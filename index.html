@@ -21,11 +21,11 @@
             <br>
             <span id="name">
               <label for="firstName">First</label>
-              <input id="firstName" type="text" class="form-control:focus" placeholder="Jieun">
+              <input id="firstName" type="text" class="form-control:focus" placeholder="Jieun" required>
             </span>
             <span>
               <label for="lastName">Last</label>
-              <input id="lastName" type="text" class="form-control:focus" placeholder="Kang">
+              <input id="lastName" type="text" class="form-control:focus" placeholder="Kang" required>
             </span>
           </div>
           <div class="form-group">
@@ -104,8 +104,8 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="target">Q4. Which type of developer are you more interested in?</label>
-            <select class="form-control" id="target">
+            <label for="position">Q4. Which type of developer are you more interested in?</label>
+            <select class="form-control" id="position">
               <option id="frontend" value="frontend">Front-end Developer (User Interface)</option>
               <option id="backend" value="backend">Back-end Developer (business Logic)</option>
               <option id="fullstack" value="fullstack">Full-stack Developer</option>
@@ -115,13 +115,13 @@
             <label for="choice">Q5. Do you enjoy being persistent and hunting down the problem?</label>
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" value="yes" checked>
+                <input type="radio" name="groupChoice" value="yes" checked>
                 Yes
               </label>
             </div>            
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" value="no" checked>
+                <input type="radio" name="groupChoice" value="no" checked>
                 No
               </label>
             </div>
@@ -146,14 +146,16 @@
               </ul>
               <br>
               <h4>Cons:</h4>
-              <li>Requires decent effort and time to learn</li>
-              <li>Offers less flexibility than C++</li>
-              <li>Resolving errors requires serious expertise and knowledge</li>
+              <ul>
+                <li>Requires decent effort and time to learn</li>
+                <li>Offers less flexibility than C++</li>
+                <li>Resolving errors requires serious expertise and knowledge</li>
+              </ul>
               <br>
-              <p>If you'd like to find out more about C#, <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">Click Here!</a></p>
+              <p>If you'd like to find out more information about C#, <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">Click Here!</a></p>
             </div>
             <div class="outputJs">
-              <h3>JavaScript</h3>
+              <h3>"<span class="firstName"></span>, you should study JavaScript!"</h3>
               <img src="img/js.png" alt="A symbol image of JavaScript.">
               <p>JavaScript is the “frontend” programming language. JavaScript is widely used to design interactive frontend applications. For instance, when you click on a button which opens up a popup, the logic is implemented via JavaScript.</p>
               <p>These days, many organizations, particularly startups, are using NodeJS which is a JavaScript-based run-time environment. Node.js lets developers use JavaScript for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Hence now with JS, you can use a single programming language for server-side and client-side scripts. If you are looking for that cool tech job at your favorite startup, you should seriously consider learning JavaScript.</p>
@@ -171,12 +173,12 @@
                 <li>Absence of copy or equivalent method</li>
               </ul>
               <br>
-              <p>If you'd like to find out more about JavaScript, <a href="https://www.javascript.com/">Click Here!</a></p>
+              <p>If you'd like to find out more information about JavaScript, <a href="https://www.javascript.com/">Click Here!</a></p>
             </div>
             <div class="outputPython">
-              <h3>Python</h3>
+              <h3>"<span class="firstName"></span>, you should study Python!"</h3>
               <img src="img/python.png" alt="A symbol image of Python.">
-              <p>Python undoubtedly tops the list. It is widely accepted as the best programming language to learn first. Python is fast, easy-to-use, and easy-to-deploy programming language that is being widely used to develop scalable web applications. YouTube, Instagram, Pinterest, SurveyMonkey are all built-in Python. Python provides excellent library support and has a large developer community. The programming language provides a great starting point for beginners. Talking about those who are looking for a better job, you should definitely learn Python ASAP! A lot of startups are using Python as their primary backend stack and so, this opens up a huge opportunity for full-stack Python developers.</p>
+              <p>Python undoubtedly tops the list. It is widely accepted as the best programming language to learn first. Python is fast, easy-to-use, and easy-to-deploy programming language that is being widely used to develop scalable web applications. <em>YouTube, Instagram, Pinterest, SurveyMonkey</em> are all built-in Python. Python provides excellent library support and has a large developer community. The programming language provides a great starting point for beginners. Talking about those who are looking for a better job, you should definitely learn Python ASAP! A lot of startups are using Python as their primary backend stack and so, this opens up a huge opportunity for full-stack Python developers.</p>
               <br>
               <h4>Pros:</h4>
               <ul>
@@ -192,7 +194,7 @@
                 <li>The database access layer is somewhat immature</li>
               </ul>
               <br>
-              <p>If you'd like to find out more about Python, <a href="https://www.python.org/">Click Here!</a></p>
+              <p>If you'd like to find out more information about Python, <a href="https://www.python.org/">Click Here!</a></p>
             </div>
           </div>
         </div>
