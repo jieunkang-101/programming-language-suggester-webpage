@@ -1,6 +1,5 @@
 .container {
   margin-bottom: 200px;
-  margin-left: 150px;
   font-family: sans-serif;
   font-size: 120%;
 }
@@ -17,6 +16,7 @@
 .description {
   border: 2px solid rgb(247, 214, 214);
   padding: 20px;
+  margin-top: 10px;
 }
 
 #title {
