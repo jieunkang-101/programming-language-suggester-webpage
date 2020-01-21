@@ -3,11 +3,11 @@ $(document).ready(function() {
     event.preventDefault();
     var firstNameInput = $("input#firstName").val();
     var lastNameInput = $("input#lastName").val();
-    var company = $("input:radio[name=groupCompany]:checked").val();
-    var position = $("input:radio[name=groupPosition]:checked").val();
-    var choice = $("input:radio[name=groupChoice]:checked").val();
+    var companyType = $("input:radio[name=groupCompany]:checked").val();
+    var jobPosition = $("input:radio[name=groupPosition]:checked").val();
+    var interestAboutCode = $("input:radio[name=groupChoice]:checked").val();
 
-    if (choice === "no") {
+    if (interestAboutCode === "no") {
       $("#outputJs").hide();
       $("#outputPython").hide();
       $("#outputCsharp").hide();
@@ -15,7 +15,7 @@ $(document).ready(function() {
       $("#modalClose").click(function() {
         $("#myModal").hide();
       });
-    } else if (position === "frontEnd" || position === "fullStack") {
+    } else if (jobPosition === "frontEnd" || jobPosition === "fullStack") {
       $("#outputJs").hide();
       $("#outputPython").hide();
       $("#outputCsharp").hide();
@@ -24,7 +24,7 @@ $(document).ready(function() {
       $(".close").click(function() {
         $("#outputJs").slideUp();
       });
-    } else if (position === "backEnd" && company ==="company1") {
+    } else if (jobPosition === "backEnd" && companyType ==="company1") {
       $("#outputJs").hide();
       $("#outputPython").hide();
       $("#outputCsharp").hide();
@@ -33,7 +33,7 @@ $(document).ready(function() {
       $(".close").click(function() {
         $("#outputPython").fadeOut();
       });
-    } else if (position === "backEnd" && company ==="company3") {
+    } else if (jobPosition === "backEnd" && companyType ==="company3") {
       $("#outputJs").hide();
       $("#outputPython").hide();
       $("#outputCsharp").hide();
